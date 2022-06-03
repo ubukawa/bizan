@@ -26,6 +26,8 @@ const showMap = async (texts) => {
   map = new mapgl.Map({
     container: 'map',
     hash: true,
+    center: [134.233884, 34.033731],
+    zoom: 8,
     style: 'std.json',
     maxZoom: 16,
   })

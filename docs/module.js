@@ -26,6 +26,8 @@ const showMap = async (texts) => {
   map = new mapgl.Map({
     container: 'map',
     hash: true,
+    center: [134.233884, 34.033731],
+    zoom: 8,
     style: 'std.json',
     maxZoom: 16,
   })
@@ -43,7 +45,7 @@ const showMap = async (texts) => {
       'Microsoft Libby Online (Natural) - English (United Kingdom)'
     ].includes(v.name)) voice = v
   }
-
+/*
   const DELTA_BEARING = 15
   const DELTA_PITCH = 5
   const DELTA_Z = 0.4
@@ -98,6 +100,7 @@ const showMap = async (texts) => {
       }
     )
   })
+*/
 }
 
 window.onload = () => {
