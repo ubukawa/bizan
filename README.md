@@ -14,6 +14,7 @@ Test of 3D visualization
 * Application layer 1: 日本シームレス地質図WMTS配信サービス
 	* Geological Maps (Geological Survey of Japan ):  https://gbank.gsj.jp/seamless/wmts/wmts.html 
 	* Tile URL: https://gbank.gsj.jp/seamless/tilemap/detailed/g/{z}/{y}/{x}.png
+	* Zoom level: 5-13
 * Application layer 2: Aearial photo
 	* Geospatial Information Authority of Japan https://maps.gsi.go.jp/development/ichiran.html
 	* Tile URL: https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg
