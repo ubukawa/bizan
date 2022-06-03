@@ -44,6 +44,8 @@ const showMap = async (texts) => {
     ].includes(v.name)) voice = v
   }
 
+/*
+
   const DELTA_BEARING = 15
   const DELTA_PITCH = 5
   const DELTA_Z = 0.4
@@ -98,6 +100,7 @@ const showMap = async (texts) => {
       }
     )
   })
+*/
 }
 
 window.onload = () => {
