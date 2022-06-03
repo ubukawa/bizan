@@ -6,6 +6,8 @@
 <script src="https://ubukawa.github.io/bizan/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
 <link href="https://ubukawa.github.io/bizan/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet"  />
 <link href="style.css" rel="stylesheet"  />
+<script src="https://unpkg.com/mapbox-gl-style-switcher@1.0.11/dist/index.js"></script>
+<link href="https://unpkg.com/mapbox-gl-style-switcher@1.0.11/styles.css" rel="stylesheet"  />
 </head>
 <body>
  
@@ -24,8 +26,27 @@ var map = new mapgl.Map({
   maxZoom: 16
 });
 
+//style switch
+const styles: MapboxStyleDefinition[] = [
+    {
+        title: 'Geology',
+        uri:'https://ubukawa.github.io/bizan/std.json'
+    },
+    {
+        title: 'Photo',
+        uri:'https://ubukawa.github.io/bizan/std-photo.json'
+    }
+];
+
+const options: MapboxStyleSwitcherOptions = {
+    defaultStyle: 'Geology',
+    eventListeners: {
+    }
+};
+
 
 //UI
+map.addControl(new MapboxStyleSwitcherControl(styles, options));
 map.addControl(new mapgl.NavigationControl(), 'bottom-right');
 map.addControl(new mapgl.ScaleControl({
     maxWidth: 200, unit: 'metric'
