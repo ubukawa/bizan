@@ -48,7 +48,7 @@ const showMap = async (texts) => {
   const DELTA_PITCH = 5
   const DELTA_Z = 0.4
   const DELTA_PAN = 120
-
+  
   let easing = t => {
     return t * (2 - t)
   }
