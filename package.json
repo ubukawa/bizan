@@ -1,0 +1,40 @@
+{
+  "name": "bizan",
+  "version": "1.0.0",
+  "description": "Test of 3D visualization",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubukawa/bizan.git"
+  },
+  "keywords": [],
+  "author": "Taro Ubukawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ubukawa/bizan/issues"
+  },
+  "homepage": "https://github.com/ubukawa/bizan#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@watergis/mapbox-gl-export": "^1.2.16",
+    "@watergis/mapbox-gl-legend": "^1.2.3",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.1",
+    "dotenv-webpack": "^7.1.0",
+    "fs": "0.0.1-security",
+    "mapbox-gl": "^2.8.2",
+    "mapbox-gl-style-switcher": "^1.0.11",
+    "path": "^0.12.7",
+    "style-loader": "^3.3.1"
+  }
+}
