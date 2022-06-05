@@ -1,8 +1,8 @@
 //require('dotenv').config()  //webpack does not work well with dotenv
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { MapboxStyleSwitcherControl } from 'mapbox-gl-style-switcher';
-import 'mapbox-gl-style-switcher/styles.css';
+import { MapboxStyleSwitcherControl } from '@watergis/mapbox-gl-style-switcher';
+import '@watergis/mapbox-gl-style-switcher/styles.css';
 //import MapboxPopupControl from '@watergis/mapbox-gl-popup';
 //import '@watergis/mapbox-gl-popup/css/styles.css';
 //import MapboxLegendControl from '@watergis/mapbox-gl-legend';
