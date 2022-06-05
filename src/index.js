@@ -40,7 +40,7 @@ styles: [
     { title: 'Geology', uri:'std.json' },
     { title: 'Photo', uri:'std-photo.json' }
 ],
-MapboxStyleSwitcherControl.DEFAULT_STYLE = styles[0].title;
-map.addControl(new MapboxStyleSwitcherControl(styles), 'top-right');
+//MapboxStyleSwitcherControl.DEFAULT_STYLE = styles[0].title;
+map.addControl(new MapboxStyleSwitcherControl(styles, 'Photo'), 'top-right');
 
 
