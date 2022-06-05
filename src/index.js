@@ -14,7 +14,7 @@ var mapgl = mapboxgl;
 mapgl.accessToken = 'pk.eyJ1IjoidC11YnVrYXdhIiwiYSI6ImNrb3NuemYxeDAwazQybm55YXUwZ281MmkifQ.MDqjOP45DIUcpLSCI9JAGg';
 const map = new mapgl.Map({
   container: 'map',
-  style: 'std.json',
+  style: 'std-photo.json',
   center: [134.233884, 34.033731],
   zoom: 8,
   maxZoom: 16
@@ -36,11 +36,12 @@ for(let v of speechSynthesis.getVoices()) {
 }
 
 //style-switcher
-styles: [
-    { title: 'Geology', uri:'std.json' },
-    { title: 'Photo', uri:'std-photo.json' }
-],
+const styles = [
+    { 'title': 'Geology', 'uri': 'std.json' },
+    { 'title': 'Photo', 'uri': 'std-photo.json' }
+];
 //MapboxStyleSwitcherControl.DEFAULT_STYLE = styles[0].title;
-map.addControl(new MapboxStyleSwitcherControl(styles, 'Photo'), 'top-right');
+MapboxStyleSwitcherControl.DEFAULT_STYLE = config.styles[1].title;
+map.addControl(new MapboxStyleSwitcherControl(styles), 'top-right');
 
 
