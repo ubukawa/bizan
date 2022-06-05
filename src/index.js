@@ -41,7 +41,7 @@ const styles = [
     { 'title': 'Photo', 'uri': 'std-photo.json' }
 ];
 //MapboxStyleSwitcherControl.DEFAULT_STYLE = styles[0].title;
-MapboxStyleSwitcherControl.DEFAULT_STYLE = config.styles[1].title;
+MapboxStyleSwitcherControl.DEFAULT_STYLE = styles[1].title;
 map.addControl(new MapboxStyleSwitcherControl(styles), 'top-right');
 
 
