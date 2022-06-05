@@ -18,6 +18,7 @@ const map = new mapgl.Map({
   container: 'map',
   style: 'std-photo.json',
   center: [134.233884, 34.033731],
+  hash: true,
   zoom: 8,
   maxZoom: 16
 });
