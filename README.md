@@ -3,7 +3,7 @@ Test of 3D visualization
 
 
 # Maps
-* MapLibre https://ubukawa.github.io/bizan/maplibre.html
+* MapLibre https://ubukawa.github.io/bizan/maplibre-pre3.html (MapLibre GL JS v2.2.0-pre.3) 
 * MapBox https://ubukawa.github.io/bizan/mapbox.html
 
 
